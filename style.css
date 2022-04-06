@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
+:root {
+    --main_color_dark: #0e1115;
+    --second_color_dark: #0174d0;
+    --main_color_light: #ffffff;
+    --second_color_light: #71c4ff;
+}
+
+body {
+    background-color: var(--main_color_dark);
+}
+
+h1 {
+    font-family: 'Didact Gothic', sans-serif;
+    color: var(--second_color_dark);
+}
+
+.line-1{
+    position: relative;
+    top: 100%;
+    width: 24em;
+    margin: 100px auto auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+
+
+.anim-typewriter{
+    animation: typewriter 1.5s steps(14) 1s 1 normal both,
+    blinkTextCursor 1000ms steps(14) infinite normal;
+}
+@keyframes typewriter{
+    from{width: 0;}
+    to{width: 8em;}
+}
+@keyframes blinkTextCursor{
+    from{border-right-color: rgba(255,255,255,.75);}
+    to{border-right-color: transparent;}
+}
