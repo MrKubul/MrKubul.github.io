@@ -11,8 +11,14 @@ body {
     background-color: var(--main_color_dark);
 }
 
-h1 {
+h1 h3 {
     font-family: 'Didact Gothic', sans-serif;
+    color: var(--second_color_dark);
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+section {
     color: var(--second_color_dark);
 }
 
