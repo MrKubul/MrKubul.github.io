@@ -40,10 +40,11 @@ section {
 
 .welcome-page {
     background: linear-gradient(110deg, #203354 60%, #192841 60%);
+    position: relative;
 }
 
 .about-me {
-    background: black;
+    background: white;
 }
 
 .projects {
@@ -56,6 +57,27 @@ section {
 
 svg {
     display: block;
-    padding: 20px;
+    padding: 0px;
     font-size: 10em;
+}
+
+.custom-shape-divider-bottom-1653169153 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1653169153 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 300px;
+}
+
+.custom-shape-divider-bottom-1653169153 .shape-fill {
+    fill: #FFFFFF;
 }
