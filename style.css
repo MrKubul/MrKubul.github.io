@@ -1,7 +1,27 @@
+:root {
+    --main_color_dark: #0e1115;
+    --second_color_dark: #0174d0;
+    --main_color_light: #ffffff;
+    --second_color_light: #71c4ff;
+}
+
 * {
     font-family: sans-serif;
     overflow: hidden;
     margin: 0;
+}
+
+.example::-webkit-scrollbar-track {   /*To cos nie działa nie wiem czemu*/
+    background: hsl(120 75% 50% / 1);
+
+}
+
+.example::-webkit-scrollbar {
+    border-radius: 2px;
+}
+
+body {
+    overflow: hidden;
 }
 
 section {
@@ -31,7 +51,7 @@ section {
 }
 
 .contact-me {
-    background: blue;
+    background: var(--second_color_dark);
 }
 
 svg {
