@@ -3,25 +3,16 @@
     --second_color_dark: #0174d0;
     --main_color_light: #ffffff;
     --second_color_light: #71c4ff;
+    --navy: #0a192f;
 }
 
 * {
     font-family: sans-serif;
-    overflow: hidden;
     margin: 0;
 }
 
-.example::-webkit-scrollbar-track {   /*To cos nie działa nie wiem czemu*/
-    background: hsl(120 75% 50% / 1);
-
-}
-
-.example::-webkit-scrollbar {
-    border-radius: 2px;
-}
-
 body {
-    overflow: hidden;
+
 }
 
 section {
@@ -29,30 +20,32 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    scroll-snap-align: start;
 }
 
 .portfolio {
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
     height: 100vh;
 }
 
 .welcome-page {
-    background: linear-gradient(110deg, #203354 60%, #192841 60%);
+    background: var(--navy);
     position: relative;
 }
 
+.welcome-page h1 {
+    color: var(--main_color_light);
+}
+
 .about-me {
-    background: white;
+    background: var(--main_color_light);
 }
 
 .projects {
-    background: red;
+    background: var(--main_color_light);
 }
 
 .contact-me {
-    background: var(--second_color_dark);
+    position: relative;
+    background: var(--navy) ;
 }
 
 svg {
@@ -74,10 +67,24 @@ svg {
 .custom-shape-divider-bottom-1653169153 svg {
     position: relative;
     display: block;
-    width: calc(100% + 1.3px);
+    width: 100vh;
+    min-width: 100%;
     height: 300px;
 }
 
 .custom-shape-divider-bottom-1653169153 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.custom-shape-divider-top-1657273773 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1657273773 .shape-fill{
     fill: #FFFFFF;
 }
