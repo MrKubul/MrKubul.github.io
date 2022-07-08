@@ -28,12 +28,50 @@ section {
 
 .welcome-page {
     background: var(--navy);
+    background-size: cover;
     position: relative;
     display: flex;
     flex-direction: column;
 }
 
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    padding: 10px 90px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,0.0);
+    color: #FFFFFF;
+    z-index: 100;
+}
 
+nav .logo {
+    float: left;
+}
+
+ul {
+    color: #FFFFFF;
+    text-decoration: none;
+    list-style: none;
+    float: right;
+    margin: 0;
+    display: flex;
+    padding: 10px;
+}
+nav ul li a {
+    text-decoration: none;
+    text-decoration-style: wavy;
+    color: white;
+}
+li {
+    background-color: var(--navy);
+    border-radius: 24px;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+}
 .about-me {
     background: var(--main_color_light);
 }
