@@ -91,6 +91,8 @@ svg {
 .typewriter h1 {
     font-size: 25px;
     color: #FFFFFF;
+    position: relative;
+    top: -10vh  ;   
     font-family: monospace;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid orange; /* The typwriter cursor */
@@ -115,5 +117,7 @@ svg {
 }
 
 .main-icon {
-    padding-bottom: 5%; 
+    padding-bottom: 5%;
+    position: relative;
+    top: -10vh  ;
 }
