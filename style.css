@@ -43,14 +43,31 @@ section {
 }
 
 .contact-me {
+    color: white;
+    font-size: 20px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
     background: var(--navy) ;
+}
+
+.contact-me h1 {
+    position: relative;
+    top: -7vh;
+    font-size: 50px;
 }
 
 svg {
     display: block;
     padding: 0px;
     font-size: 10em;
+}
+
+.contact-icons{
+    display: inline-flex;
+    padding: 10px;
+    font-size: 8em;
 }
 
 .custom-shape-divider-bottom-1653169153 {
@@ -92,7 +109,7 @@ svg {
     font-size: 25px;
     color: #FFFFFF;
     position: relative;
-    top: -10vh  ;   
+    top: -10vh  ;
     font-family: monospace;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid orange; /* The typwriter cursor */
