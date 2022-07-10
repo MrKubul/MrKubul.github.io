@@ -6,6 +6,15 @@
     --navy: #0a192f;
 }
 
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
 * {
     font-family: sans-serif;
     margin: 0;
@@ -127,6 +136,9 @@ li {
     color: #FFFFFF;
 }
 
+/*.popups {*/
+/*    display: none;*/
+/*}*/
 
 .popups .overlay {
     position: fixed;
@@ -143,7 +155,7 @@ li {
     position: relative;
     top: -50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(0);
+    transform: translate(-50%, -50%);
     background: #fff;
     width: 500px;
     height: 300px;
@@ -151,6 +163,8 @@ li {
     text-align: center;
     padding: 20px;
     box-sizing: border-box;
+    overflow: scroll;
+    display: none;
 }
 
 .popups .popup-close-btn {
@@ -159,13 +173,17 @@ li {
     right: 20px;
 }
 
+/*.popups.active {*/
+/*    display: flex;*/
+/*}*/
+
 .popups.active .overlay {
     display: block;
 }
 
 .popups.active .popup-content {
-    transition: all 300ms ease-in-out;
-    transform: translate(-50%, -50%) scale(1);
+    display: block;
+    animation: fadeIn 1s;
 }
 
 .contact-me {
