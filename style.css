@@ -4,6 +4,9 @@
     --main_color_light: #ffffff;
     --second_color_light: #71c4ff;
     --navy: #0a192f;
+    --primary-color: #fff; /* try #212121 also for dark mode */
+    --background-color: #212121;
+    --font: sans-serif;
 }
 
 @-webkit-keyframes fadeIn {
@@ -91,6 +94,65 @@ li {
     background: var(--main_color_light);
     display: flex;
     flex-direction: column;
+}
+
+/* Timeline Container */
+.timeline {
+    background: var(--primary-color);
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.b00m {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.my-description {
+
+    width: 300px;
+}
+
+/* Outer Layer with the timeline border */
+.outer {
+    border-left: 2px solid #333;
+}
+
+/* Card container */
+.card {
+    position: relative;
+    margin: 0 0 20px 20px;
+    padding: 10px;
+    background: #333;
+    color: gray;
+    border-radius: 8px;
+    max-width: 400px;
+}
+
+/* Information about the timeline */
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Title of the card */
+.title {
+    color: orangered;
+    position: relative;
+}
+
+/* Timeline dot  */
+.title::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 999px;
+    left: -39px;
+    border: 3px solid orangered;
 }
 
 .projects {
