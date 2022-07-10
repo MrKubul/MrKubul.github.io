@@ -90,21 +90,34 @@ li {
 }
 
 .project-boxes {
-    padding: 100px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .project1, .project2, .project3 {
-    color: #FFFFFF;
-    align-items: center;
-    justify-content: center;
-    margin-left: 40px;
-    margin-right: 40px;
-    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+    width: 25vw;
     height: 60vh;
     background-color: var(--navy);
     border-radius: 30px;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.projects-names{
+}
+
+.read-buttons {
+    bottom: -10px
+}
+
+.project1 p, .project2 p, .project3 p{
+    justify-content: center;
+    color: #FFFFFF;
 }
 
 .contact-me {
