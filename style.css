@@ -19,7 +19,7 @@
 }
 
 * {
-    font-family: sans-serif;
+    font-family: 'Didact Gothic', sans-serif;
     margin: 0;
 }
 
@@ -29,6 +29,7 @@ body {
 
 section {
     height: 100vh;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,6 +37,7 @@ section {
 
 .portfolio {
     height: 100vh;
+    width: 100vw;
 }
 
 .welcome-page {
@@ -50,7 +52,7 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 10vh;
     padding: 10px 50px;
     box-sizing: border-box;
@@ -205,8 +207,8 @@ li {
 
 .popups .overlay {
     position: fixed;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     width: 100vw;
     height: 100vh;
     background: rgba(0, 0, 0, 0.7);
@@ -286,16 +288,16 @@ svg {
     bottom: 0;
     left: 0;
     width: 100vw;
-    overflow: hidden;
+    overflow-x: hidden;
     line-height: 0;
     transform: rotate(180deg);
 }
 
 .custom-shape-divider-bottom-1653169153 svg {
     position: relative;
+    overflow-x: hidden;
     display: block;
-    width: 100vh;
-    min-width: 100%;
+    width: 100vw;
     height: 300px;
 }
 
@@ -308,7 +310,7 @@ svg {
     top: 0;
     left: 0;
     width: 100vw;
-    overflow: hidden;
+    overflow-x: hidden;
     line-height: 0;
 }
 
@@ -322,7 +324,7 @@ svg {
     position: relative;
     top: -10vh  ;
     font-family: monospace;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    overflow-x: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid orange; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
