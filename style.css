@@ -1,13 +1,12 @@
+/* Color variables*/
+
 :root {
-    --main_color_dark: #0e1115;
-    --second_color_dark: #0174d0;
-    --main_color_light: #ffffff;
-    --second_color_light: #71c4ff;
-    --navy: #0a192f;
-    --primary-color: #fff; /* try #212121 also for dark mode */
-    --background-color: #212121;
+    --main_color: #0a192f;
+    --main_background_color: #ffffff;
     --font: sans-serif;
 }
+
+/* Animations*/
 
 @-webkit-keyframes fadeIn {
     from { opacity: 0; }
@@ -21,31 +20,15 @@
 * {
     font-family: 'Didact Gothic', sans-serif;
     margin: 0;
+    max-width: 100%;
 }
 
 body {
 
 }
 
-section {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .portfolio {
-    height: 100vh;
-    width: 100vw;
-}
 
-.welcome-page {
-    background: var(--navy);
-    background-size: cover;
-    position: relative;
-    display: flex;
-    flex-direction: column;
 }
 
 nav {
@@ -57,50 +40,95 @@ nav {
     padding: 10px 50px;
     box-sizing: border-box;
     background: rgba(0,0,0,0.0);
-    color: #FFFFFF;
-    z-index: 100;
+    color: var(--main_background_color);
+    z-index: 10;
 }
 
 .my-logo {
-    outline: #FFFFFF solid 2px;
-    border-radius: 50px;
+    outline: var(--main_background_color) solid 2px;
+    border-radius: 35px;
     float: left;
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    min-width: 70px;
+    min-height: 70px;
+    height: 70px;
     margin-top: 10px;
 }
 
 ul {
-    color: #FFFFFF;
+    color: var(--main_background_color);
     text-decoration: none;
     list-style: none;
     float: right;
     margin: 0;
     display: flex;
+    flex-wrap: wrap;
     padding: 10px;
 }
+
+@media screen and (max-device-width: 510px) {
+
+    .my-logo {
+        transform: scale(0.8);
+        padding: 2px;
+        margin: 2px;
+    }
+
+    ul {
+        padding: 2px;
+        margin: 2px;
+        margin-top: 20px;
+    }
+
+    ul li {
+        padding: 2px;
+        margin: 5px;
+    }
+
+    nav {
+        padding: 10px 10px;
+    }
+}
+
 nav ul li a {
     text-decoration: none;
-    text-decoration-style: wavy;
-    color: white;
+    color: var(--main_background_color);
 }
+
 li {
-    background-color: var(--navy);
+    background-color: var(--main_color);
     border-radius: 24px;
     padding: 10px;
     margin: 10px;
-    outline: #FFFFFF solid 2px;
+    outline: var(--main_background_color) solid 2px;
     text-decoration: none;
 }
+
+section {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-page {
+    background: var(--main_color);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
 .about-me {
-    background: var(--main_color_light);
+    background: var(--main_background_color);
     display: flex;
     flex-direction: column;
 }
 
 /* Timeline Container */
 .timeline {
-    background: var(--primary-color);
+    background: var(--main_background_color);
     margin: 20px auto;
     padding: 20px;
 }
@@ -109,10 +137,11 @@ li {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .my-description {
-
     width: 300px;
 }
 
@@ -141,7 +170,7 @@ li {
 
 /* Title of the card */
 .title {
-    color: orangered;
+    color: var(--main_background_color);
     position: relative;
 }
 
@@ -154,11 +183,11 @@ li {
     background: white;
     border-radius: 999px;
     left: -39px;
-    border: 3px solid orangered;
+    border: 3px solid var(--main_color);
 }
 
 .projects {
-    background: var(--main_color_light);
+    background: var(--main_background_color);
     display: flex;
     flex-direction: column;
 }
@@ -175,7 +204,7 @@ li {
     margin: 40px;
     width: 25vw;
     height: 60vh;
-    background-color: var(--navy);
+    background-color: var(--main_color);
     border-radius: 30px;
     align-items: center;
     position: relative;
@@ -251,7 +280,7 @@ li {
 
 .popups.active .popup-content {
     transform: translate(60%, 0px);
-    animation: fadeIn 1s;
+    animation: fadeIn 2s;
     display: block;
 }
 
@@ -262,7 +291,7 @@ li {
     display: flex;
     flex-direction: column;
     padding: 0px;
-    background: var(--navy) ;
+    background: var(--main_color) ;
 }
 
 .contact-me h1 {
