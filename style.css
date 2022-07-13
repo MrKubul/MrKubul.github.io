@@ -120,6 +120,11 @@ section {
     flex-direction: column;
 }
 
+.hello-image {
+    width: 200px;
+    height: 200px;
+}
+
 .about-me {
     background: var(--main_background_color);
     display: flex;
@@ -203,7 +208,9 @@ section {
     flex-direction: column;
     margin: 40px;
     width: 25vw;
+    min-width: 300px;
     height: 60vh;
+    max-height: 800px;
     background-color: var(--main_color);
     border-radius: 30px;
     align-items: center;
@@ -379,4 +386,16 @@ svg {
     padding-bottom: 5%;
     position: relative;
     top: -10vh  ;
+}
+
+.icon-box {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.all-icons {
+    display: flex;
+    flex-direction: row;
 }
